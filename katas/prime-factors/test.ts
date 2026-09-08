@@ -1,7 +1,7 @@
 import assert from 'node:assert/strict';
-import { PrimeFactors } from './prime-factors.ts';
+import { factorsOf } from './prime-factors.ts';
 
-const factors = PrimeFactors.generate(1);
+const factors = factorsOf(1);
 
 assert.deepEqual(factors, []);
 

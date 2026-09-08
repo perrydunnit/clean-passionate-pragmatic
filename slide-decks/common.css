@@ -1,0 +1,73 @@
+:root {
+    --r-background-color: #111;
+    --deck-text-color: #f4f1ea;
+    --deck-muted-color: #b8b5ae;
+    --deck-subtle-color: #d8d5ce;
+    --deck-accent-color: #f0b35b;
+    --deck-secondary-color: #72d6d0;
+    --deck-panel-color: #181a1a;
+    --deck-grid-color: rgba(244, 241, 234, 0.05);
+}
+
+html,
+body,
+.reveal {
+    background: #111;
+    color: var(--deck-text-color);
+}
+
+.reveal .progress {
+    height: 4px;
+}
+
+.reveal .slides section {
+    background: transparent;
+    box-shadow: none;
+    color: var(--deck-text-color);
+}
+
+.reveal .slides > section {
+    background-color: #111;
+    background-image:
+        linear-gradient(var(--deck-grid-color) 1px, transparent 1px),
+        linear-gradient(90deg, var(--deck-grid-color) 1px, transparent 1px),
+        linear-gradient(135deg, rgba(114, 214, 208, 0.035) 25%, transparent 25% 75%, rgba(240, 179, 91, 0.025) 75%);
+    background-position: left top, left top, left top;
+    background-size: 4rem 4rem, 4rem 4rem, 12rem 12rem;
+    box-shadow: inset 6px 0 0 rgba(240, 179, 91, 0.8);
+}
+
+.reveal h1,
+.reveal h2,
+.reveal h3,
+.reveal h4,
+.reveal h5,
+.reveal h6 {
+    color: var(--deck-text-color);
+}
+
+.reveal h1 {
+    color: var(--deck-accent-color);
+}
+
+.reveal h2 {
+    color: var(--deck-accent-color);
+}
+
+.reveal h3,
+.reveal h4 {
+    color: var(--deck-secondary-color);
+}
+
+.reveal strong,
+.reveal a {
+    color: var(--deck-accent-color);
+}
+
+.reveal .progress {
+    background: rgba(244, 241, 234, 0.15);
+}
+
+.reveal .progress span {
+    background: var(--deck-secondary-color);
+}
