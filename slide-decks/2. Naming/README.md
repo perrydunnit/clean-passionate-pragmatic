@@ -8,7 +8,7 @@
 
 The chapter establishes the central idea for this session: we are authors writing code for human readers, and we spend more than 10 times as much time reading code as writing it.
 
-This deck is a static Reveal.js presentation. Run a local static server from the repository root:
+This deck is a static Reveal.js presentation. Run [online](https://perrydunnit.github.io/clean-passionate-pragmatic/slide-decks/2.%20Naming/) or run a local static server from the repository root:
 
 ```powershell
 npx --yes http-server .
