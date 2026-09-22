@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Meaningful Naming</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reveal.css">
+    <link rel="stylesheet" href="../../common.css">
+    <style>
+        .reveal .slides section {
+            box-sizing: border-box;
+            padding: 3rem;
+            text-align: left;
+            font-size: 1.25em;
+        }
+
+        .reveal .slides section h1,
+        .reveal .slides section h2,
+        .reveal .slides section h3 {
+            text-align: left;
+        }
+
+        .reveal .slides section p,
+        .reveal .slides section li {
+            color: var(--deck-subtle-color);
+        }
+
+        .reveal .slides section em {
+            color: var(--deck-muted-color);
+        }
+
+        .reveal .slides section li::marker {
+            color: var(--deck-accent-color);
+        }
+
+        .reveal .slides section pre {
+            border-left: 4px solid var(--deck-secondary-color);
+            box-shadow: 0 0 0 1px rgba(244, 241, 234, 0.08);
+        }
+
+        .reveal .slides section code {
+            color: var(--deck-secondary-color);
+        }
+
+        @media (max-width: 700px) {
+            .reveal .slides section {
+                padding: 1.5rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="reveal">
+        <div class="slides">
+            <section data-markdown="naming.md" data-separator="^\r?\n---\r?\n"
+                data-separator-vertical="^\r?\n--\r?\n" data-notes="^Note:">
+            </section>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reveal.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/plugin/markdown/markdown.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/plugin/notes/notes.js"></script>
+    <script>
+        Reveal.initialize({
+            controls: true,
+            progress: true,
+            slideNumber: true,
+            hash: true,
+            overview: true,
+            center: true,
+            transition: 'fade',
+            backgroundTransition: 'none',
+            plugins: [RevealMarkdown, RevealNotes]
+        });
+    </script>
+</body>
+
+</html>

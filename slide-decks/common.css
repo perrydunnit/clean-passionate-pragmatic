@@ -71,3 +71,15 @@ body,
 .reveal .progress span {
     background: var(--deck-secondary-color);
 }
+
+.reveal .controls {
+    color: var(--deck-subtle-color);
+}
+
+.reveal .controls .enabled {
+    opacity: 0.85;
+}
+
+.reveal .controls .enabled:hover {
+    opacity: 1;
+}

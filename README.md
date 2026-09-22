@@ -16,7 +16,7 @@ My preference is that people opt-in to participating, as this is the most likely
 
 ### The Decks
 1. There is an intro slide deck outlining why this is necessary, and summarizing how the ideas that follow can be useful in our current environment. This deck is also likely a good candidate to share with leadership if they need to be involved.
-[View the Mastering AI Craftsmanship intro deck](https://perrydunnit.github.io/clean-passionate-pragmatic/slide-decks/1.%20Intro/)
+[View the Mastering AI Craftsmanship intro deck](https://perrydunnit.github.io/clean-passionate-pragmatic/slide-decks/intro/)
 2. A collection of topic decks, each addressing a specific idea.
    1. Topic decks should contain
       1. a topic summary
@@ -25,8 +25,18 @@ My preference is that people opt-in to participating, as this is the most likely
       4. kata(s) to drive the point home and teach through "play"
       5. suggested reading
    2. Completed topic decks:
-      1. [Meaningful Naming](https://perrydunnit.github.io/clean-passionate-pragmatic/slide-decks/2.%20Naming/)
+      1. [Meaningful Naming](https://perrydunnit.github.io/clean-passionate-pragmatic/slide-decks/topics/naming/)
          - Relevant reading: Chapter 2, "Meaningful Names," from [*Clean Code*](https://openlibrary.org/books/OL26222911M/Clean_Code), pages 17-30.
+         - Recommended prerequisites: none
+      2. [Small Functions](https://perrydunnit.github.io/clean-passionate-pragmatic/slide-decks/topics/functions/)
+         - Relevant reading: Chapter 3, "Functions," from [*Clean Code*](https://openlibrary.org/books/OL26222911M/Clean_Code), pages 31-52.
+         - Recommended prerequisite: [Meaningful Naming](https://perrydunnit.github.io/clean-passionate-pragmatic/slide-decks/topics/naming/)
+      3. [Formatting](https://perrydunnit.github.io/clean-passionate-pragmatic/slide-decks/topics/formatting/)
+         - Relevant reading: Chapter 5, "Formatting," from [*Clean Code*](https://openlibrary.org/books/OL26222911M/Clean_Code), pages 75-90.
+         - Recommended prerequisite: [Small Functions](https://perrydunnit.github.io/clean-passionate-pragmatic/slide-decks/topics/functions/)
+      4. [Classes & Modules](https://perrydunnit.github.io/clean-passionate-pragmatic/slide-decks/topics/classes/)
+         - Relevant reading: Chapter 10, "Classes," from [*Clean Code*](https://openlibrary.org/books/OL26222911M/Clean_Code), pages 135-154, plus "Orthogonality" and "The Evils of Duplication" from [*The Pragmatic Programmer*](https://openlibrary.org/books/OL7408140M/The_Pragmatic_Programmer).
+         - Recommended prerequisite: [Small Functions](https://perrydunnit.github.io/clean-passionate-pragmatic/slide-decks/topics/functions/)
 
 ### Run Locally
 To run a deck locally with speaker view and Markdown loading enabled, start a static web server from the repository root:
@@ -35,7 +45,7 @@ To run a deck locally with speaker view and Markdown loading enabled, start a st
 npx --yes http-server .
 ```
 
-Keep that terminal running while presenting. Open the printed local URL, then navigate to `slide-decks/1.%20Intro/` or `slide-decks/2.%20Naming/`. Press `S` in the presentation to open speaker view in a new window. This avoids the `origin null` restrictions that apply when opening the HTML files directly with `file://`.
+Keep that terminal running while presenting. Open the printed local URL, then navigate to `slide-decks/intro/` or any deck under `slide-decks/topics/` (for example, `slide-decks/topics/naming/`). Press `S` in the presentation to open speaker view in a new window. This avoids the `origin null` restrictions that apply when opening the HTML files directly with `file://`.
 
 After editing CSS, Markdown, or HTML, use `Ctrl+Shift+R` for a hard reload; restarting the server is not necessary. If speaker view says `localhost refused to connect`, confirm the server is still running, close the old speaker window, hard-reload the presentation, and press `S` again. Restart the server only if the process has stopped or its port has changed.
 
@@ -45,3 +55,18 @@ For a globally installed command instead:
 npm install --global http-server
 http-server .
 ```
+
+### Run the Katas
+The kata exercises use Node's built-in test runner — no packages to install. Run every kata from the repository root:
+
+```powershell
+node --test
+```
+
+Or run a single kata:
+
+```powershell
+node --test katas/word-wrap/test.ts
+```
+
+Each passing test prints a `✔` line; a failing test prints a readable expected/actual diff instead of a raw call stack.
