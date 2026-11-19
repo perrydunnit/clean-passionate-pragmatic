@@ -37,6 +37,9 @@ My preference is that people opt-in to participating, as this is the most likely
       4. [Classes & Modules](https://perrydunnit.github.io/clean-passionate-pragmatic/slide-decks/topics/classes/)
          - Relevant reading: Chapter 10, "Classes," from [*Clean Code*](https://openlibrary.org/books/OL26222911M/Clean_Code), pages 135-154, plus "Orthogonality" and "The Evils of Duplication" from [*The Pragmatic Programmer*](https://openlibrary.org/books/OL7408140M/The_Pragmatic_Programmer).
          - Recommended prerequisite: [Small Functions](https://perrydunnit.github.io/clean-passionate-pragmatic/slide-decks/topics/functions/)
+      5. [Test-Driven Development](https://perrydunnit.github.io/clean-passionate-pragmatic/slide-decks/topics/tdd/)
+         - Relevant reading: Chapter 9, "Unit Tests," from [*Clean Code*](https://openlibrary.org/books/OL26222911M/Clean_Code), pages 121-134; Chapters 5-6, "Test Driven Development" and "Practicing," from [*The Clean Coder*](https://openlibrary.org/books/OL25108903M/The_Clean_Coder), pages 77-94; "Programming by Coincidence," "Code That's Easy to Test," and "Ruthless Testing" from [*The Pragmatic Programmer*](https://openlibrary.org/books/OL7408140M/The_Pragmatic_Programmer); "Practice, Practice, Practice" from [*The Passionate Programmer*](https://openlibrary.org/books/OL25019226M/The_passionate_programmer).
+         - Recommended prerequisite: [Small Functions](https://perrydunnit.github.io/clean-passionate-pragmatic/slide-decks/topics/functions/)
 
 ### Run Locally
 To run a deck locally with speaker view and Markdown loading enabled, start a static web server from the repository root:
