@@ -4,9 +4,9 @@
 
 ## Recommended prerequisites
 
-[Pairing](../../../topics/pairing/) — not as a technique, but because the opening slide carries over from it. The bridge is deliberate: pairing is about who is in the room, and this series is about what the room asks of you.
+None. This is the first session, and the opening slide assumes nothing about which session you were in last — or whether you were in one at all. It asks about the week, not about a previous topic.
 
-No prior reading is required, and none is assigned (see below).
+No prior reading is required either (see below).
 
 ## What this session does
 

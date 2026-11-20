@@ -316,6 +316,6 @@ Mention the write-up here — that a piece is being written from what the room r
 A series README with the full list, the page numbers, and the caveats is linked from the deck index.
 
 Note:
-Point at the README rather than reading the list aloud. The useful thing to say is what the books do *not* contain: there is no chapter in any of them about driver/navigator mechanics, remote pairing, or how to run a difficult conversation. The workshop format in this series is assembled from what the books actually describe, and the gaps are documented rather than filled in.
+Point at the README rather than reading the list aloud. The useful thing to say is what the books do *not* contain: *The Clean Coder* gives you the shape of a no but says nothing about what it costs socially to say one, and none of the four says what to do when the no is overruled. This session's practice is assembled from what they do describe, and the gaps are documented rather than filled in.
 
 Close by handing the room back to themselves. They have a sentence and a date; the series has done what it can.

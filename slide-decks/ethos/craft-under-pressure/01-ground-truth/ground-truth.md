@@ -1,23 +1,23 @@
 <!-- .slide: data-kicker="Craft Under Pressure · Session 1" data-foot="Since we last met" -->
 
 ## Since We Last Met
-### A different question
-
-Where did you pair this week, and what did the second person catch that you would have missed?
+### Not about the code
 
 <div class="questions">
-<p>What did pairing cost you — time, pride, the feeling of being fast?</p>
-<p>Was it worth it on the days when nothing went wrong?</p>
+<p>What has been hardest about the work lately — not the code, the circumstances?</p>
+<p>What have you got used to that you would not have accepted a year ago?</p>
 </div>
 
-**Pairing is about who is in the room. Today is about what the room asks of you.**
+The topic decks are about the work itself. These three sessions are about the conditions it happens in — which is why there is no kata at the end.
 
 Note:
-Give the group a few quiet moments before opening. Ask for one concrete exchange — one thing the second person caught, one thing it cost.
+No assumption here about which session you were last in, or whether you were in one at all. If you have been to a topic deck, the shape will be familiar: a claim, an argument, a practice. If you have not, nothing today depends on it. Say that early — it costs one sentence and removes a reason to feel behind.
 
-The honest answers will be about time and about pride. Name that out loud, because it sets up the session: the thing that makes pairing feel expensive is the same thing that makes telling the truth feel expensive. Both are social costs, not technical ones.
+The first question usually produces "the meetings" or "the reporting". Follow up with "and what made it hard?" The answer is almost always two reasonable things pulling in opposite directions, which is exactly what the fifth slide names. Do not name it yet; let the room get there first.
 
-Keep this short. Three minutes. The bridge to today is the last line: pairing is about who is in the room, and today is about what the room asks of you.
+The second question is the sharper one. "Got used to" produces the material the rest of the session runs on: the estimate that was halved, the status report everybody knows is optimistic, the reviewer who stopped commenting. Take two or three without editorialising.
+
+Keep this to four minutes. The bridge is the last line: the topic decks are about the work, and this one is about the conditions.
 
 ---
 

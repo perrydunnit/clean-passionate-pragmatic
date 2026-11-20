@@ -48,7 +48,7 @@ My preference is that people opt-in to participating, as this is the most likely
    1. [Craft Under Pressure](https://github.com/perrydunnit/clean-passionate-pragmatic/tree/main/slide-decks/ethos/craft-under-pressure) — *Role Conflict and Competing Demands*. Three sessions on working inside expectations that are both legitimate and cannot both be met. The link opens the series README on GitHub, which is the place to start.
       - View the decks in order: [Ground Truth](https://perrydunnit.github.io/clean-passionate-pragmatic/slide-decks/ethos/craft-under-pressure/01-ground-truth/), [What's Mine](https://perrydunnit.github.io/clean-passionate-pragmatic/slide-decks/ethos/craft-under-pressure/02-whats-mine/), [The Line](https://perrydunnit.github.io/clean-passionate-pragmatic/slide-decks/ethos/craft-under-pressure/03-the-line/).
       - Relevant reading: *The Clean Coder* ch. 1-3; the *Enchiridion*; *Tao Te Ching*; *The Art of War*; *A Theory of Cognitive Dissonance* ch. 1 and 4; *The Social Psychology of Organizations* ch. 7. The series README explains what the four source books do not cover, and carries the reading notes and safety rails for running a session.
-      - Recommended prerequisites: [Pairing](https://perrydunnit.github.io/clean-passionate-pragmatic/slide-decks/topics/pairing/) for the first session; each session assumes the one before it.
+      - Recommended prerequisites: none for the first session; each later session assumes the one before it.
       - These decks use a different visual template from the topic decks — paper and ink rather than dark. The rule is that the collection owns the look, so every deck under `slide-decks/ethos/` shares it.
 
 ### Run Locally
