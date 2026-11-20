@@ -44,6 +44,13 @@ My preference is that people opt-in to participating, as this is the most likely
          - Relevant reading: Chapter 12, "Collaboration," from [*The Clean Coder*](https://openlibrary.org/books/OL25108903M/The_Clean_Coder), pages 157-166, plus Chapter 4, "Coding" (pages 62-75), Chapter 11, "Pressure" (pages 153-155), Chapter 14, "Mentoring, Apprenticeship, and Craftsmanship" (pages 183-184), and Chapter 6, "Practicing" (pages 88-92); "Pride and Prejudice," especially Tip 70, "Sign Your Work," from [*The Pragmatic Programmer*](https://openlibrary.org/books/OL7408140M/The_Pragmatic_Programmer); "Be the Worst," "Find a Mentor," "Be a Mentor," "Being Present," and "That Fat Man in the Mirror" from [*The Passionate Programmer*](https://openlibrary.org/books/OL25019226M/The_passionate_programmer).
          - Recommended prerequisites: [Test-Driven Development](https://perrydunnit.github.io/clean-passionate-pragmatic/slide-decks/topics/tdd/)
 
+3. A collection of decks about being a practitioner rather than about a technique, told in ordered series.
+   1. [Craft Under Pressure](https://perrydunnit.github.io/clean-passionate-pragmatic/slide-decks/ethos/craft-under-pressure/) — *Role Conflict and Competing Demands*. Three sessions on working inside expectations that are both legitimate and cannot both be met.
+      - Read in order: [Ground Truth](https://perrydunnit.github.io/clean-passionate-pragmatic/slide-decks/ethos/craft-under-pressure/01-ground-truth/), [What's Mine](https://perrydunnit.github.io/clean-passionate-pragmatic/slide-decks/ethos/craft-under-pressure/02-whats-mine/), [The Line](https://perrydunnit.github.io/clean-passionate-pragmatic/slide-decks/ethos/craft-under-pressure/03-the-line/).
+      - Relevant reading: *The Clean Coder* ch. 1-3; the *Enchiridion*; *Tao Te Ching*; *The Art of War*; *A Theory of Cognitive Dissonance* ch. 1 and 4; *The Social Psychology of Organizations* ch. 7. The [series README](slide-decks/ethos/craft-under-pressure/README.md) explains what the four source books do not cover.
+      - Recommended prerequisites: [Pairing](https://perrydunnit.github.io/clean-passionate-pragmatic/slide-decks/topics/pairing/) for the first session; each session assumes the one before it.
+      - These decks use a different visual template from the topic decks — paper and ink rather than dark. The rule is that the collection owns the look, so every deck under `slide-decks/ethos/` shares it.
+
 ### Run Locally
 To run a deck locally with speaker view and Markdown loading enabled, start a static web server from the repository root:
 
@@ -51,7 +58,7 @@ To run a deck locally with speaker view and Markdown loading enabled, start a st
 npx --yes http-server .
 ```
 
-Keep that terminal running while presenting. Open the printed local URL, then navigate to `slide-decks/intro/` or any deck under `slide-decks/topics/` (for example, `slide-decks/topics/naming/`). Press `S` in the presentation to open speaker view in a new window. This avoids the `origin null` restrictions that apply when opening the HTML files directly with `file://`.
+Keep that terminal running while presenting. Open the printed local URL, then navigate to `slide-decks/intro/` or any deck under `slide-decks/topics/` or `slide-decks/ethos/` (for example, `slide-decks/topics/naming/` or `slide-decks/ethos/craft-under-pressure/01-ground-truth/`). Press `S` in the presentation to open speaker view in a new window. This avoids the `origin null` restrictions that apply when opening the HTML files directly with `file://`.
 
 After editing CSS, Markdown, or HTML, use `Ctrl+Shift+R` for a hard reload; restarting the server is not necessary. If speaker view says `localhost refused to connect`, confirm the server is still running, close the old speaker window, hard-reload the presentation, and press `S` again. Restart the server only if the process has stopped or its port has changed.
 
