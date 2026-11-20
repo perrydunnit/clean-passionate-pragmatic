@@ -1,0 +1,357 @@
+/*
+ * Ethos collection theme — paper and ink.
+ *
+ * Deliberately a separate stylesheet rather than a variant inside
+ * slide-decks/common.css: the two collections must not drift into each other.
+ * Decks in this collection link this file *instead of* common.css.
+ *
+ * Design notes live in scratch/outlines/2. Craft Under Pressure.md.
+ */
+
+:root {
+    --r-background-color: #f4f0e6;
+
+    --paper: #f4f0e6;
+    --ink: #1c1b19;
+    --ink-soft: #4a4741;
+    --ink-faint: #7d776c;
+    --accent: #a25c1b;
+    --accent-on-ink: #f0b35b;
+    --rule: rgba(28, 27, 25, 0.18);
+    --panel: #eae4d6;
+}
+
+html,
+body,
+.reveal {
+    background: var(--paper);
+    color: var(--ink);
+}
+
+.reveal {
+    font-family: "Iowan Old Style", "Palatino Linotype", Palatino, "Book Antiqua", Georgia, serif;
+}
+
+.reveal .slides section {
+    box-sizing: border-box;
+    height: 100%;
+    padding: 51px 67px 60px;
+    font-family: inherit;
+    font-size: 20px;
+    line-height: 1.5;
+    text-align: left;
+    color: var(--ink);
+    background: var(--paper);
+    box-shadow: none;
+}
+
+/* ---------- running furniture ---------- */
+
+.reveal .slides section::before {
+    content: attr(data-kicker);
+    position: absolute;
+    top: 24px;
+    left: 67px;
+    font-family: ui-sans-serif, "Segoe UI", system-ui, sans-serif;
+    font-size: 9.6px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--accent);
+}
+
+.reveal .slides section::after {
+    content: attr(data-foot);
+    position: absolute;
+    bottom: 20px;
+    left: 67px;
+    right: 67px;
+    padding-top: 8.8px;
+    border-top: 1px solid var(--rule);
+    font-family: ui-sans-serif, "Segoe UI", system-ui, sans-serif;
+    font-size: 9.3px;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--ink-faint);
+}
+
+/* ---------- typography ---------- */
+
+.reveal .slides section h1 {
+    margin: 54px 0 0;
+    font-size: 56px;
+    font-weight: 400;
+    line-height: 1.06;
+    letter-spacing: -0.015em;
+    color: var(--ink);
+}
+
+.reveal .slides section h1 small {
+    display: block;
+    margin-top: 14px;
+    font-size: 18.4px;
+    font-style: italic;
+    font-weight: 400;
+    letter-spacing: 0;
+    color: var(--ink-soft);
+}
+
+.reveal .slides section h2 {
+    margin: 26px 0 0;
+    font-size: 32.8px;
+    font-weight: 400;
+    line-height: 1.16;
+    letter-spacing: -0.01em;
+    color: var(--ink);
+}
+
+.reveal .slides section h2 em {
+    font-style: italic;
+    color: var(--accent);
+}
+
+.reveal .slides section h3 {
+    margin: 6px 0 0;
+    font-size: 13.6px;
+    font-weight: 400;
+    font-style: italic;
+    letter-spacing: 0.01em;
+    color: var(--ink-faint);
+}
+
+.reveal .slides section p {
+    max-width: 30em;
+    margin: 17.6px 0 0;
+    font-size: 16.8px;
+    color: var(--ink-soft);
+}
+
+.reveal .slides section p.lead {
+    max-width: 24em;
+    font-size: 21.6px;
+    line-height: 1.45;
+    color: var(--ink);
+}
+
+.reveal .slides section strong {
+    font-weight: 600;
+    color: var(--ink);
+}
+
+.reveal .slides section em {
+    color: inherit;
+}
+
+.hairline {
+    width: 56px;
+    height: 2px;
+    margin-top: 24px;
+    background: var(--accent);
+}
+
+/* ---------- quote: a div, so the citation stays out of the quote styling ---------- */
+
+.quote {
+    margin-top: 35px;
+    padding-left: 26px;
+    border-left: 2px solid var(--accent);
+}
+
+.reveal .slides section .quote p {
+    max-width: 26em;
+    margin: 0;
+    font-size: 24.8px;
+    line-height: 1.42;
+    font-style: italic;
+    color: var(--ink);
+}
+
+.reveal .slides section .quote cite {
+    display: block;
+    margin-top: 17.6px;
+    font-family: ui-sans-serif, "Segoe UI", system-ui, sans-serif;
+    font-size: 9.9px;
+    font-style: normal;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--ink-faint);
+}
+
+/* ---------- questions: a hairlined stack, never bullets ---------- */
+
+.questions {
+    margin-top: 24px;
+    max-width: 34em;
+    border-top: 1px solid var(--rule);
+}
+
+.reveal .slides section .questions p {
+    margin: 0;
+    padding: 11px 0;
+    border-bottom: 1px solid var(--rule);
+    font-size: 16px;
+    line-height: 1.45;
+    color: var(--ink);
+}
+
+/* ---------- diagram: three expectations, one person ---------- */
+
+.tug {
+    display: grid;
+    grid-template-columns: 1fr 72px 240px;
+    align-items: center;
+    gap: 16px;
+    margin-top: 28px;
+}
+
+.tug-expectations {
+    display: flex;
+    flex-direction: column;
+    gap: 8.8px;
+}
+
+.tug-expectation {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    padding: 8px 14px;
+    border: 1px solid var(--rule);
+    background: var(--panel);
+    font-size: 14.7px;
+    color: var(--ink);
+}
+
+.tug-expectation span {
+    font-family: ui-sans-serif, "Segoe UI", system-ui, sans-serif;
+    font-size: 9.3px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--accent);
+}
+
+.tug-arrows {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 5.6px;
+    color: var(--accent);
+    font-size: 15.2px;
+}
+
+.tug-person {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 134px;
+    border: 1.5px solid var(--ink);
+    font-size: 14.4px;
+    line-height: 1.3;
+    text-align: center;
+}
+
+/* ---------- scenario ---------- */
+
+.case {
+    max-width: 33em;
+    margin-top: 27px;
+    padding: 21px 24px;
+    background: var(--panel);
+    border-left: 3px solid var(--ink);
+}
+
+.reveal .slides section .case p {
+    max-width: 33em;
+    margin: 0;
+    font-size: 16px;
+    color: var(--ink);
+}
+
+.reveal .slides section .case p + p {
+    margin-top: 11px;
+    color: var(--ink-soft);
+}
+
+/* ---------- table ---------- */
+
+.reveal .slides section table {
+    width: 100%;
+    max-width: 36em;
+    margin: 26px 0 0;
+    border-collapse: collapse;
+    font-size: 15.2px;
+}
+
+.reveal .slides section thead th {
+    padding: 0 13px 10px 0;
+    border: none;
+    border-bottom: 1px solid var(--ink);
+    background: none;
+    font-family: ui-sans-serif, "Segoe UI", system-ui, sans-serif;
+    font-size: 9.3px;
+    font-weight: 600;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    text-align: left;
+    color: var(--ink-faint);
+}
+
+.reveal .slides section tbody td {
+    padding: 6.7px 13px 6.7px 0;
+    border: none;
+    border-bottom: 1px solid var(--rule);
+    background: none;
+    vertical-align: top;
+    text-align: left;
+    color: var(--ink);
+}
+
+.reveal .slides section tbody td.faint {
+    color: var(--ink-faint);
+}
+
+/* ---------- divider ---------- */
+
+.reveal .slides section.divider {
+    display: flex !important;
+    flex-direction: column;
+    justify-content: center;
+    background: var(--ink);
+    color: var(--paper);
+}
+
+.reveal .slides section.divider h1 {
+    margin: 0;
+    font-size: 48px;
+    color: var(--paper);
+}
+
+.reveal .slides section.divider p {
+    margin-top: 17.6px;
+    font-style: italic;
+    color: rgba(244, 240, 230, 0.6);
+}
+
+.reveal .slides section.divider::before {
+    color: var(--accent-on-ink);
+}
+
+.reveal .slides section.divider::after {
+    border-top-color: rgba(244, 240, 230, 0.22);
+    color: rgba(244, 240, 230, 0.6);
+}
+
+.reveal .slides section.divider .hairline {
+    background: var(--accent-on-ink);
+}
+
+/* ---------- code (rare in this collection, present for completeness) ---------- */
+
+.reveal .slides section pre {
+    border-left: 3px solid var(--ink);
+    background: var(--panel);
+    box-shadow: none;
+}
+
+.reveal .slides section code {
+    font-family: ui-monospace, "Cascadia Code", Consolas, monospace;
+    color: var(--ink);
+}
