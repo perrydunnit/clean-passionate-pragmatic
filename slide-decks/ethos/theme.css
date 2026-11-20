@@ -64,7 +64,7 @@ body,
     position: absolute;
     bottom: 20px;
     left: 67px;
-    right: 67px;
+    right: 150px;
     padding-top: 8.8px;
     border-top: 1px solid var(--rule);
     font-family: ui-sans-serif, "Segoe UI", system-ui, sans-serif;
@@ -341,6 +341,84 @@ body,
 
 .reveal .slides section.divider .hairline {
     background: var(--accent-on-ink);
+}
+
+/* ---------- navigation furniture ---------- */
+
+/*
+ * One mid-tone for both grounds. The controls live outside the slide, in the
+ * window's corner, so they are sometimes over paper and sometimes over an ink
+ * divider -- and reveal does not expose which. A colour that reads on both is
+ * more robust than trying to invert with the slide.
+ */
+.reveal .controls {
+    --ethos-arrow: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cpath d='M16 71C42 61 64 54 94 50C64 46 42 39 16 29' fill='none' stroke='%23000' stroke-width='6' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+
+    right: 22px;
+    bottom: 38px;
+    color: #8a8377;
+    transform: scale(0.8);
+    transform-origin: bottom right;
+}
+
+/* Curved chevrons, drawn as a mask so `color` and the enabled/disabled
+   opacities still drive them. */
+.reveal .controls .controls-arrow {
+    background-color: currentColor;
+    -webkit-mask-image: var(--ethos-arrow);
+    mask-image: var(--ethos-arrow);
+    -webkit-mask-size: 34px 34px;
+    mask-size: 34px 34px;
+    -webkit-mask-position: center;
+    mask-position: center;
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+}
+
+.reveal .controls .controls-arrow::before,
+.reveal .controls .controls-arrow::after {
+    display: none;
+    content: none;
+}
+
+.reveal .controls .navigate-right .controls-arrow {
+    transform: none;
+}
+
+.reveal .controls .navigate-left .controls-arrow {
+    transform: rotate(180deg);
+}
+
+.reveal .controls .navigate-up .controls-arrow {
+    transform: rotate(-90deg);
+}
+
+.reveal .controls .navigate-down .controls-arrow {
+    transform: rotate(90deg);
+}
+
+.reveal .controls .enabled {
+    opacity: 0.8;
+}
+
+.reveal .controls .enabled:hover {
+    opacity: 1;
+}
+
+.reveal .slide-number {
+    left: auto;
+    right: 24px;
+    bottom: 20px;
+    padding: 0;
+    background: transparent;
+    font-family: ui-sans-serif, "Segoe UI", system-ui, sans-serif;
+    font-size: 9.3px;
+    letter-spacing: 0.16em;
+    color: #8a8377;
+}
+
+.reveal .slide-number a {
+    color: inherit;
 }
 
 /* ---------- code (rare in this collection, present for completeness) ---------- */
