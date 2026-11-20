@@ -397,6 +397,13 @@ body,
     transform: rotate(90deg);
 }
 
+/* reveal bounces the forward control (bounce-left/right/up/down, 2s x 50) to
+   hint that there is somewhere to go. The arrow is already visible; the
+   movement only draws the eye away from the slide. */
+.reveal .controls button {
+    animation: none !important;
+}
+
 .reveal .controls .enabled {
     opacity: 0.85;
 }
