@@ -37,13 +37,13 @@ Eight minutes alone, then pairs compare the columns rather than the people. Noth
 
 ## Running this deck
 
-From the repository root:
+This deck is a static Reveal.js presentation. Run [online](https://perrydunnit.github.io/clean-passionate-pragmatic/slide-decks/ethos/craft-under-pressure/01-ground-truth/) or run a local static server from the repository root:
 
 ```powershell
 npx --yes http-server .
 ```
 
-Open the printed URL at `slide-decks/ethos/craft-under-pressure/01-ground-truth/`. The Markdown is fetched over HTTP, so `file://` will not load it. Press `S` for speaker view, `Esc` for overview, `Ctrl+Shift+R` after editing.
+Keep the terminal running, then open the printed URL at `slide-decks/ethos/craft-under-pressure/01-ground-truth/`. The Markdown is fetched over HTTP, so `file://` will not load it. Press `S` for speaker view, `Esc` for overview, and `Ctrl+Shift+R` after editing.
 
 ## Before you run it
 
