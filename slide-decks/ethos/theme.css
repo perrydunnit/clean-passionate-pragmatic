@@ -398,7 +398,7 @@ body,
 }
 
 .reveal .controls .enabled {
-    opacity: 0.8;
+    opacity: 0.85;
 }
 
 .reveal .controls .enabled:hover {
